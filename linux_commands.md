@@ -9,7 +9,7 @@ This guide provides commonly used command-line tools in Linux with full syntax, 
 ## 1. 🔍 `grep` — Search text using patterns
 
 **Syntax:**
-```
+
 grep [OPTIONS] PATTERN [FILE...]
 Options:
 
@@ -23,18 +23,18 @@ Option	Description
 -e	Match using multiple patterns
 
 Examples:
-
+```
 grep "error" logfile.txt
 grep -i "error" logfile.txt
 grep -n "error" logfile.txt
 grep -v "success" logfile.txt
 grep -r "password" /etc
 grep -e "fail" -e "error" logfile.txt
-
+```
 2.  sed — Stream editor for filtering and replacing text
 Syntax:
 
-t
+
 sed [OPTIONS] 'script' [FILE...]
 Options:
 
@@ -45,12 +45,13 @@ Option	Description
 
 Examples:
 
-
+```
 sed 's/foo/bar/' file.txt
 sed 's/foo/bar/g' file.txt
 sed -i 's/localhost/127.0.0.1/g' config.txt
 sed -n '5,10p' file.txt
-3. 🔎 find — Locate files and directories
+```
+3.  find — Locate files and directories
 Syntax:
 
 find [PATH] [OPTIONS] [ACTIONS]
@@ -65,12 +66,13 @@ Option	Description
 -exec	Execute command on matched files
 
 Examples:
-
+```
 find /etc -name "*.conf"
 find . -type f -size +10M
 find /var/log -mtime +7 -name "*.log"
 find . -type f -exec chmod 644 {} \;
-4. 📄 head — Output the beginning of a file
+```
+4.  head — Output the beginning of a file
 Syntax:
 
 
@@ -82,12 +84,12 @@ Option	Description
 -c N	Show first N bytes
 
 Examples:
-
-
+```
 head file.txt
 head -n 20 file.txt
 head -c 100 file.txt
-5. 📄 tail — Output the end of a file
+```
+5.  tail — Output the end of a file
 Syntax:
 
 
@@ -100,12 +102,12 @@ Option	Description
 -f	Follow file changes (e.g., logs)
 
 Examples:
-
-
+```
 tail file.txt
 tail -n 50 file.txt
 tail -f /var/log/syslog
-6. 🐱 cat — Concatenate and view file content
+```
+6.  cat — Concatenate and view file content
 Syntax:
 
 
@@ -118,8 +120,9 @@ Option	Description
 -A	Show tabs and end-of-line characters
 
 Examples:
-
+```
 cat file.txt
 cat file1 file2 > merged.txt
 cat -n script.sh
 cat -b script.sh
+```
