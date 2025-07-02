@@ -1,0 +1,124 @@
+Intermediate to Advanced Bash Scripting Practice List
+==========================
+🔹 1. File & Directory Handling
+Write a script to count the number of lines, words, and characters in a file.
+
+Script to remove empty files from a given directory.
+
+Monitor a directory and send alert if any file is modified (using inotifywait).
+
+Script to find and delete files older than X days.
+
+Script to compare two files and print differences.
+
+🔹 2. User Management & System Admin
+Script to check if a user exists, and if not, create the user.
+
+Script to lock or unlock multiple users from a file.
+
+Create a script that automatically backs up /home to a remote server using rsync.
+
+Script to get logged-in user count and show their session duration.
+
+Check and display users who haven't logged in for more than 30 days.
+
+🔹 3. Networking & Monitoring
+Script to check the status of multiple servers (IP list) using ping.
+
+Script to check if a website is up or down (using curl or wget).
+
+Display top 5 IP addresses accessing your server from Apache/Nginx logs.
+
+Script to parse /var/log/syslog and send alert if “error” or “fail” is found.
+
+Create a script that shows disk usage, RAM usage, and CPU load.
+
+🔹 4. Loops, Arrays & Functions
+Write a function to reverse a number or string.
+
+Use arrays to store and print all filenames in a directory.
+
+Script to read all usernames from a file and check login status.
+
+Write a script to sort an array in ascending and descending order.
+
+Write a function to calculate GCD and LCM of two numbers.
+
+🔹 5. String Manipulation
+Remove all special characters or digits from a string.
+
+Check whether a given string is a valid email address.
+
+Find the longest word in a sentence or file.
+
+Convert uppercase to lowercase (and vice versa) using tr or shell.
+
+Script to replace a word in multiple files recursively.
+
+🔹 6. Process and Job Automation
+Monitor if a specific process is running, and if not, restart it.
+
+Script to schedule a daily backup using cron.
+
+Implement a retry logic to rerun a failed command 3 times.
+
+Write a script to kill all processes of a given user or application.
+
+Log CPU usage every 5 seconds for 2 minutes.
+
+🔹 7. Real-Time DevOps Scenarios
+Script to fetch latest Git commit logs and send as email.
+
+Script to automate deployment (Git pull → Build → Restart service).
+
+Generate a dynamic inventory file for Ansible using Bash.
+
+Script to parse a YAML or JSON file to read config values.
+
+Build a menu-driven interface for restarting services (nginx, mysql, etc.)
+
+🔹 8. Log Analysis & Reporting
+Parse Apache logs to:
+
+Show top 10 visited URLs
+
+Show top 5 user agents
+
+Show requests per hour
+
+Monitor log files for login failures or SSH brute force attempts.
+
+Generate a weekly log summary and send via email.
+
+🔹 9. Backups & Archiving
+Script to compress logs older than 7 days.
+
+Create a tar archive of /var/log with timestamp.
+
+Backup MySQL database and upload to S3 bucket (with CLI or curl).
+
+Implement log rotation manually using Bash.
+
+🔹 10. Interview-Specific Problems
+Write a script to simulate a load balancer using round-robin method.
+
+Implement a script to detect duplicate files in a directory (by checksum).
+
+Script to validate a password (at least 1 digit, 1 capital letter, min 8 chars).
+
+Count the number of occurrences of each word in a file.
+
+Script to monitor multiple services and print report if any are down.
+
+
+Bonus: Tips to Practice the Right Way
+Start with: #!/bin/bash in every script
+
+Use: set -euo pipefail for advanced reliability
+
+Add comments for logic building
+
+Try to convert each into a function
+
+Use cron, awk, sed, grep, cut, find, xargs, and read wherever relevant
+
