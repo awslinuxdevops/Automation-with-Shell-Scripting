@@ -50,6 +50,8 @@ sed 's/foo/bar/' file.txt
 sed 's/foo/bar/g' file.txt
 sed -i 's/localhost/127.0.0.1/g' config.txt
 sed -n '5,10p' file.txt
+
+sed 
 ```
 3.  find — Locate files and directories
 Syntax:
